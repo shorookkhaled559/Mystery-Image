@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mystery Image</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div
+      class="box bg-white h-[90%] sm:w-[60%] md:w-[50%] lg:w-[40%] rounded-3xl shadow-lg text-center"
+    >
+      <h1 class="my-5 text-2xl">
+        <i class="fa-solid fa-question"></i>
+        Guess the Image
+      </h1>
+      <div class="w-[90%] h-[250px] mx-auto">
+        <img id="img"
+          class="w-full h-full rounded-3xl blur-lg transition-all duration-200"
+          src="img/cat.jpg"
+          alt="img"
+        />
+      </div>
+      <div class="mt-8">
+        <input
+          id="answer"
+          class="w-[90%] border-2 border-gray-200 focus:border-indigo-500 rounded-lg p-2 mb-3 text-center outline-none transition-all duration-300"
+          type="text"
+          placeholder="Write your answer"
+        />
+        <div id="message" class="hidden my-3 text-2xl capitalize">
+            message
+        </div>
+      </div>
+      <div>
+        <button
+          id="hintBtn" onclick="Hint()"
+          class="mx-3 bg-yellow-300 border-y px-10 py-3 rounded-xl text-white hover:cursor-pointer hover:bg-yellow-400 hover:shadow-lg hover:scale-105 transition duration-200"
+        >
+          <i class="fa-solid fa-lightbulb"></i>
+          Hint
+        </button>
+        <button onclick="checkAnswer()"
+          id="answerBtn"
+          class="mx-3 bg-green-700 px-8 py-3 rounded-xl text-white hover:cursor-pointer hover:bg-green-800 hover:shadow-lg hover:scale-105 transition duration-200"
+        >
+          <i class="fa-solid fa-circle-check"></i>
+          Check
+        </button>
+      </div>
+      <div id="score" class=" text-3xl my-4">Score:</div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

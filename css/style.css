@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #bfdbfe, #e9d5ff, #fbcfe8);
+}
+h1,button,div{
+      font-family: "Fredoka", sans-serif;
+}
