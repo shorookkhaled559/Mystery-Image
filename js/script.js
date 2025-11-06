@@ -1,8 +1,8 @@
 const cards = [
   { src: "../img/cat.jpg", answer: "cat", hint: "pet" },
-  { src: "../img/tree.png", answer: "tree", hint: "big plant" },
-  { src: "../img/sun.jpeg", answer: "sun", hint: "star" },
-  { src: "../img/brush.webp", answer: "brush", hint: "you use it on your hair" }
+  { src: "https://www.snexplores.org/wp-content/uploads/2020/04/1030_LL_trees-1028x579.png", answer: "tree", hint: "big plant" },
+  { src: "https://www.quantamagazine.org/wp-content/uploads/2018/07/SolarFull_SeanDoran_2880FullwidthLede.jpg", answer: "sun", hint: "star" },
+  { src: "https://cdn.shopify.com/s/files/1/1588/9573/files/102867__90150.jpg?v=1697586108", answer: "brush", hint: "you use it on your hair" }
 ];
 const answer = document.getElementById("answer");
 const message = document.getElementById("message");
